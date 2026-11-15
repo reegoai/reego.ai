@@ -73,9 +73,9 @@ bundle exec jekyll serve --livereload            # → http://localhost:4000
 1. Push this folder to a repo in the `reegosoftware` org, for example `reegosoftware/reego.ai`, on the `main` branch.
 2. In the repo, go to **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**.
 3. `.github/workflows/pages.yml` builds and deploys on every push to `main`.
-4. Custom domain: under **Settings → Pages → Custom domain**, the domain is set to `www.reego.ai` with **Enforce HTTPS** on. DNS is managed in Squarespace:
-   - `A` records for `www` pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`. These are A records rather than a CNAME because `www` also holds the `anthropic-domain-verification` TXT record, and a CNAME can't share a host with other records.
-   - Optional: the same four `A` records on `@`, so `reego.ai` redirects to `www.reego.ai`. Keep the existing Google TXT and MX records.
+4. Custom domain: under **Settings → Pages → Custom domain**, the domain is set to `reego.ai` with **Enforce HTTPS** on. GitHub Pages redirects `www.reego.ai` to `reego.ai` automatically. DNS is managed in Squarespace:
+   - `A` records on `@` pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`. Keep the existing Google TXT and MX records.
+   - `www` pointing to GitHub Pages as well (a `CNAME` to `reegoai.github.io`, or the same four `A` records), so the `www` → `reego.ai` redirect works.
 
 ### Vercel (later)
 
