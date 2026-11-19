@@ -29,6 +29,17 @@
         </ul>
       </div>
       <div>
+        <h3 class="site-footer__title">Products</h3>
+        <ul class="site-footer__links">
+          {%- assign products = site.data.projects | where: "kind", "product" -%}
+          {%- for p in products %}
+          {%- assign href = p.page | default: p.links.first.url %}
+          <li><a href="{% if href contains '://' %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}">{{ p.name }}</a></li>
+          {%- endfor %}
+          <li><a href="{{ '/products/' | relative_url }}">All products</a></li>
+        </ul>
+      </div>
+      <div>
         <h3 class="site-footer__title">Company</h3>
         <ul class="site-footer__links">
           <li><a href="{{ '/work/' | relative_url }}">Work &amp; products</a></li>
@@ -36,6 +47,14 @@
           <li><a href="{{ '/#about' | relative_url }}">About</a></li>
           <li><a href="{{ '/#faq' | relative_url }}">FAQ</a></li>
           <li><a href="mailto:{{ c.contact.email }}">{{ c.contact.email }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="site-footer__title">Legal</h3>
+        <ul class="site-footer__links">
+          <li><a href="{{ '/terms/' | relative_url }}">Terms of Service</a></li>
+          <li><a href="{{ '/refunds/' | relative_url }}">Refund Policy</a></li>
+          <li><a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a></li>
         </ul>
       </div>
     </div>

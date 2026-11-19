@@ -14,10 +14,28 @@
 #   image        screenshot (16:9), e.g. /assets/img/work/shots/foo.svg
 #   metric       highlighted result, e.g. "$80K/yr saved"
 #   featured     true → also shown on the home page
+#   page         our own page about it, e.g. /products/shiftera/ (kind: product;
+#                every product is listed on /products/ and in the footer)
 #   links        list of { label, url }
 #
 # To add a project: copy a block, edit it, commit. That's it.
 # ---------------------------------------------------------------------------
+
+- name: Shiftera
+  logo: /assets/img/work/logos/shiftera.png
+  image: /assets/img/work/shots/shiftera.png
+  kind: product
+  page: /products/shiftera/
+  tagline: Balanced shift schedules from your own rules
+  description: >-
+    Shift and rota scheduling software for teams. Planners enter the team,
+    time off and rules; Shiftera generates ranked schedules, flags what broke
+    and releases the plan to staff, who see their shifts and swap them. Web,
+    Android and iOS; free for one team of up to 10 people.
+  tags: [Scheduling, SaaS, Mobile]
+  links:
+    - { label: Details,     url: "/products/shiftera/" }
+    - { label: shiftera.io, url: "https://www.shiftera.io" }
 
 - name: ToolCalling.ai
   logo: /assets/img/work/logos/toolcalling.svg

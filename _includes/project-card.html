@@ -32,7 +32,11 @@
       {%- if p.links %}
       <div class="project__links">
         {%- for l in p.links %}
+        {%- if l.url contains "://" %}
         <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}{% include icon.html name="arrow-up-right" %}</a>
+        {%- else %}
+        <a href="{{ l.url | relative_url }}">{{ l.label }}{% include icon.html name="arrow-right" %}</a>
+        {%- endif %}
         {%- endfor %}
       </div>
       {%- endif %}

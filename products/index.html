@@ -1,0 +1,19 @@
+---
+title: Products
+eyebrow: Products
+heading: Software we build and run.
+description: >-
+  Products made and sold by Reego Software, from shift scheduling to LLM
+  developer tools.
+---
+{%- assign products = site.data.projects | where: "kind", "product" -%}
+<section class="section section--flush-top">
+  <div class="container">
+    <div class="projects projects--all">
+      {%- for p in products %}
+      {% include project-card.html project=p %}
+      {%- endfor %}
+    </div>
+    <p class="fine-print">Looking for open-source packages and client work? See <a href="{{ '/work/' | relative_url }}">all work</a>.</p>
+  </div>
+</section>

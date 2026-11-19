@@ -22,6 +22,7 @@ social:
 nav:
   - { label: Services,   url: "/#services" }
   - { label: Consulting, url: "/#consulting" }
+  - { label: Products,   url: "/products/" }
   - { label: Work,       url: "/work/" }
   - { label: Blog,       url: "/blog/" }
   - { label: About,      url: "/#about" }
