@@ -9,7 +9,7 @@
         {%- assign active = false -%}
         {%- if item.url != "/" and page.url contains item.url -%}{%- assign active = true -%}{%- endif %}
         {%- if item.menu %}
-        {%- assign products = site.data.projects | where: "kind", "product" %}
+        {%- assign products = site.data.projects | where_exp: "p", "p.category" %}
         <li class="nav__item nav__item--menu">
           <a class="nav__link{% if active %} is-active{% endif %}" href="{{ item.url | relative_url }}" aria-haspopup="true">{{ item.label }}{% include icon.html name="chevron-down" class="nav__chevron" %}</a>
           <ul class="nav__menu" aria-label="{{ item.label }}">

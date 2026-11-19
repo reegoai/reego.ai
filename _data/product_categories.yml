@@ -6,4 +6,4 @@
 - id: dev-tool
   title: Developer tools
   anchor: dev-tools
-  intro: Tools and guides for building with LLMs and tool calling.
+  intro: Tools, packages and guides for building with LLMs, tool calling and data.

@@ -7,7 +7,7 @@ description: >-
   rosters, medication reminders, collections, goal coaching and 3D
   exhibitions, and developer tools for LLMs.
 ---
-{%- assign products = site.data.projects | where: "kind", "product" -%}
+{%- assign products = site.data.projects | where_exp: "p", "p.category" -%}
 {%- for cat in site.data.product_categories %}
 {%- assign group = products | where: "category", cat.id -%}
 {%- if group.size > 0 %}

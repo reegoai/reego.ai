@@ -14,7 +14,8 @@
 #   image        screenshot (16:9), e.g. /assets/img/work/shots/foo.svg
 #   metric       highlighted result, e.g. "$80K/yr saved"
 #   featured     true → also shown on the home page
-#   category     product group on /products/: app | dev-tool (see _data/product_categories.yml)
+#   category     lists it on /products/ under a group: app | dev-tool
+#                (see _data/product_categories.yml); any kind can have one
 #   page         our own page about it, e.g. /products/shiftera/ (kind: product;
 #                every product is listed on /products/ and in the footer)
 #   links        list of { label, url }
@@ -129,6 +130,7 @@
   logo: /assets/img/work/logos/fastdata.svg
   image: /assets/img/work/shots/fastdata.svg
   kind: open-source
+  category: dev-tool
   featured: true
   registry: npm
   install: npx fastdata

@@ -16,6 +16,13 @@
           <li><a href="{{ c.calendar }}" target="_blank" rel="noopener">{% include icon.html name="calendar" %}<span><strong>Book a call</strong>30-minute intro</span></a></li>
           {%- endif %}
         </ul>
+        {%- assign office = site.data.company.office %}
+        {%- if office.map_embed != "" %}
+        <figure class="contact__map">
+          <figcaption><strong>Office</strong> {{ office.label }}</figcaption>
+          <iframe title="Reego Software office location" src="{{ office.map_embed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </figure>
+        {%- endif %}
       </div>
 
       <form class="contact__form" {% if c.form_endpoint != "" %}action="{{ c.form_endpoint }}" method="POST"{% else %}data-mailto="{{ c.email }}"{% endif %}>

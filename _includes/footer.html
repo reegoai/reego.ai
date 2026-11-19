@@ -31,7 +31,7 @@
       <div>
         <h3 class="site-footer__title">Products</h3>
         <ul class="site-footer__links">
-          {%- assign products = site.data.projects | where: "kind", "product" -%}
+          {%- assign products = site.data.projects | where_exp: "p", "p.category" -%}
           {%- for p in products %}
           {%- assign href = p.page | default: p.links.first.url %}
           <li><a href="{% if href contains '://' %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}">{{ p.name }}</a></li>

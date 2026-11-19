@@ -13,7 +13,7 @@ Reego Software ("we", "us") makes and sells **Shiftera**, shift and rota schedul
 
 ## This website (reego.ai)
 
-reego.ai uses no analytics and no advertising tools, and sets no cookies. Your colour theme choice is kept in your browser's local storage only. The site is hosted on GitHub Pages, which logs IP addresses for security, and loads its fonts from Google Fonts, so your browser sends your IP address to Google when the page loads. The contact form opens your own email app; if you email us or write on WhatsApp, we use what you send only to answer you and to prepare and carry out an agreement with you.
+reego.ai uses no analytics and no advertising tools, and sets no cookies of its own. Your colour theme choice is kept in your browser's local storage only. The contact section embeds a Google Maps map of our office, which Google loads from its own servers and may set its own cookies for. The site is hosted on GitHub Pages, which logs IP addresses for security, and loads its fonts from Google Fonts, so your browser sends your IP address to Google when the page loads. The contact form opens your own email app; if you email us or write on WhatsApp, we use what you send only to answer you and to prepare and carry out an agreement with you.
 
 ## Shiftera
 

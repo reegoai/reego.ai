@@ -6,6 +6,9 @@ name: Reego
 legal_name: Reego Software
 domain: reego.ai
 location: Kadıköy, Istanbul · working remotely worldwide
+office:
+  label: Kadıköy, Istanbul
+  map_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.452521866898!2d29.037783991310793!3d40.97157089749864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab883d1ec8f2b%3A0x53ac501b46afa1da!2zRmVuZXJiYWjDp2UsIEnEn3LEsXAgU2suIE5vOiAxM0EgRDoxLCAzNDcyNiBLYWTEsWvDtnkvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1777205128328!5m2!1str!2str"   # Google Maps → Share → Embed a map → the iframe's src; "" hides the map
 
 contact:
   email: contact@reego.ai
