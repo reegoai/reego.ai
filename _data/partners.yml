@@ -1,0 +1,12 @@
+# Partners: people and projects whose websites we design, build and run.
+# Shown on the home page (#partners) and on reego.software.
+- name: cosmosurrealisme
+  logo: /assets/img/partners/cosmosurrealisme.svg
+  url: https://cosmosurrealisme.com
+  label: cosmosurrealisme.com
+  text: A surrealism for the whole sky. A manifesto and a gathering of works for dreamers everywhere.
+- name: Mehrnoush Roudaki
+  logo: /assets/img/partners/roudaki.svg
+  url: https://roudaki.net
+  label: roudaki.net
+  text: Executive business performance coaching. Online consultations with booking and payments, in eight languages.

@@ -1,0 +1,17 @@
+<section class="section" id="partners">
+  <div class="container">
+    {% include section-head.html eyebrow="Partners" title="People and projects we work with." intro="We design, build and run their websites." %}
+    <div class="partners">
+      {%- for p in site.data.partners %}
+      <a class="card partner" href="{{ p.url }}" target="_blank" rel="noopener" data-reveal>
+        <img class="partner__logo" src="{{ p.logo | relative_url }}" alt="" width="52" height="52" loading="lazy">
+        <span class="partner__body">
+          <strong class="partner__name">{{ p.name }}</strong>
+          <span class="partner__text">{{ p.text }}</span>
+          <span class="partner__link">{{ p.label }}{% include icon.html name="arrow-up-right" %}</span>
+        </span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
