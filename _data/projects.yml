@@ -81,6 +81,35 @@
   links:
     - { label: progress.camp, url: "https://progress.camp" }
 
+- name: RotaMapping
+  logo: /assets/img/work/logos/rotamapping.svg
+  image: /assets/img/work/shots/rotamapping.svg
+  kind: product
+  category: app
+  tagline: Fair on-duty rosters for every part of the city
+  description: >-
+    Plans which pharmacies, emergency vets or night fuel stations are on duty
+    when, so the load is shared fairly, days off are respected and every part
+    of the city has an on-duty site nearby. Published to a public page; sites
+    get their duties by email.
+  tags: [Scheduling, Maps, Optimization]
+  links:
+    - { label: rotamapping.com, url: "https://rotamapping.com" }
+
+- name: Curato
+  logo: /assets/img/work/logos/curato.svg
+  image: /assets/img/work/shots/curato.jpg
+  kind: product
+  category: app
+  tagline: Turn your photos into a walk-through 3D exhibition
+  description: >-
+    Add your photos to a few rooms, write a caption or two, pick a look and
+    publish. Curato builds a museum anyone can walk through in the browser,
+    with no app and no 3D skills.
+  tags: [3D, Web]
+  links:
+    - { label: curato.work, url: "https://curato.work" }
+
 - name: ToolCalling.ai
   logo: /assets/img/work/logos/toolcalling.svg
   image: /assets/img/work/shots/toolcalling.svg
