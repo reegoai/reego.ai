@@ -14,6 +14,7 @@
 #   image        screenshot (16:9), e.g. /assets/img/work/shots/foo.svg
 #   metric       highlighted result, e.g. "$80K/yr saved"
 #   featured     true → also shown on the home page
+#   category     product group on /products/: app | dev-tool (see _data/product_categories.yml)
 #   page         our own page about it, e.g. /products/shiftera/ (kind: product;
 #                every product is listed on /products/ and in the footer)
 #   links        list of { label, url }
@@ -25,6 +26,7 @@
   logo: /assets/img/work/logos/shiftera.png
   image: /assets/img/work/shots/shiftera.png
   kind: product
+  category: app
   page: /products/shiftera/
   tagline: Balanced shift schedules from your own rules
   description: >-
@@ -37,10 +39,50 @@
     - { label: Details,     url: "/products/shiftera/" }
     - { label: shiftera.io, url: "https://www.shiftera.io" }
 
+- name: Remedium
+  logo: /assets/img/work/logos/remedium.png
+  kind: product
+  category: app
+  tagline: Medication reminders and symptom tracker
+  description: >-
+    Reminds you when every dose is due, tracks symptoms and notes, and shows
+    how well each treatment works, for you, your family, your pets and your
+    plants.
+  tags: [Health, Mobile]
+  links:
+    - { label: remedium.care, url: "https://remedium.care" }
+
+- name: Suite
+  logo: /assets/img/work/logos/suite.png
+  kind: product
+  category: app
+  tagline: Collect what you love, let AI suggest what's next
+  description: >-
+    Keep the movies, series, food, books, music, games and places you love in
+    collections, and ask Suite for ideas that fit your taste. Free, ad-free,
+    in six languages.
+  tags: [AI, Mobile]
+  links:
+    - { label: suite.coach, url: "https://suite.coach" }
+
+- name: Progress
+  logo: /assets/img/work/logos/progress.svg
+  kind: product
+  category: app
+  tagline: An AI coach that turns goals into steps
+  description: >-
+    A goal tracker with an AI coach. Chat for a minute, get a plan with
+    milestones and tasks, keep only what you want, and track it with honest
+    deadlines.
+  tags: [AI, Productivity]
+  links:
+    - { label: progress.camp, url: "https://progress.camp" }
+
 - name: ToolCalling.ai
   logo: /assets/img/work/logos/toolcalling.svg
   image: /assets/img/work/shots/toolcalling.svg
   kind: product
+  category: dev-tool
   featured: true
   tagline: The function-calling playground for LLMs
   description: >-
@@ -92,6 +134,7 @@
   logo: /assets/img/work/logos/toolaugmented.svg
   image: /assets/img/work/shots/toolaugmented.svg
   kind: product
+  category: dev-tool
   featured: true
   tagline: The field guide to tool-augmented LLMs
   description: >-
