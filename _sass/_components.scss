@@ -27,6 +27,32 @@
   &:hover, &.is-active { color: var(--text); background: var(--surface-2); }
 }
 
+/* Dropdown (Products → Apps / Developer tools) */
+.nav__item--menu { position: relative; }
+.nav__item--menu > .nav__link { display: inline-flex; align-items: center; gap: 4px; }
+.nav__chevron { width: 14px; height: 14px; transition: transform .2s var(--ease); }
+.nav__menu {
+  position: absolute; top: calc(100% + 8px); left: 50%; z-index: 60;
+  min-width: 260px; padding: 8px; display: grid; gap: 2px;
+  background: var(--bg-2); border: 1px solid var(--border-strong); border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  opacity: 0; visibility: hidden; transform: translate(-50%, -4px);
+  transition: opacity .2s var(--ease), transform .2s var(--ease), visibility .2s;
+  /* bridge the gap so the menu stays open while the pointer moves down */
+  &::before { content: ""; position: absolute; left: 0; right: 0; top: -10px; height: 10px; }
+}
+.nav__item--menu:hover .nav__menu,
+.nav__item--menu:focus-within .nav__menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+.nav__item--menu:hover .nav__chevron,
+.nav__item--menu:focus-within .nav__chevron { transform: rotate(180deg); }
+.nav__menu-link {
+  display: grid; gap: 2px; padding: 10px 12px; border-radius: var(--radius-sm);
+  transition: background .2s;
+  strong { font-size: .94rem; font-weight: 600; color: var(--text); }
+  span { font-size: .82rem; color: var(--text-3); }
+  &:hover, &:focus-visible { background: var(--surface-2); }
+}
+
 .icon-btn {
   display: inline-grid; place-items: center;
   width: 40px; height: 40px; border-radius: 12px;
@@ -64,6 +90,14 @@
   .nav-open .nav { opacity: 1; transform: none; visibility: visible; }
   .nav__list { flex-direction: column; }
   .nav__link { padding: 12px; font-size: 1.05rem; border-radius: var(--radius-sm); }
+  /* in the mobile menu the groups sit under Products, always open */
+  .nav__chevron { display: none; }
+  .nav__menu, .nav__item--menu:hover .nav__menu, .nav__item--menu:focus-within .nav__menu {
+    position: static; min-width: 0; padding: 0 0 4px 12px; margin-left: 12px;
+    background: none; border: 0; border-left: 1px solid var(--border); border-radius: 0; box-shadow: none;
+    opacity: 1; visibility: visible; transform: none;
+    &::before { display: none; }
+  }
 }
 
 /* ---------- Buttons ---------- */

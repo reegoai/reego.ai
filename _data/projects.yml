@@ -41,6 +41,7 @@
 
 - name: Remedium
   logo: /assets/img/work/logos/remedium.png
+  image: /assets/img/work/shots/remedium.jpg
   kind: product
   category: app
   tagline: Medication reminders and symptom tracker
@@ -54,6 +55,7 @@
 
 - name: Suite
   logo: /assets/img/work/logos/suite.png
+  image: /assets/img/work/shots/suite.jpg
   kind: product
   category: app
   tagline: Collect what you love, let AI suggest what's next
@@ -67,6 +69,7 @@
 
 - name: Progress
   logo: /assets/img/work/logos/progress.svg
+  image: /assets/img/work/shots/progress.svg
   kind: product
   category: app
   tagline: An AI coach that turns goals into steps

@@ -8,7 +8,20 @@
         {%- for item in c.nav %}
         {%- assign active = false -%}
         {%- if item.url != "/" and page.url contains item.url -%}{%- assign active = true -%}{%- endif %}
+        {%- if item.menu %}
+        {%- assign products = site.data.projects | where: "kind", "product" %}
+        <li class="nav__item nav__item--menu">
+          <a class="nav__link{% if active %} is-active{% endif %}" href="{{ item.url | relative_url }}" aria-haspopup="true">{{ item.label }}{% include icon.html name="chevron-down" class="nav__chevron" %}</a>
+          <ul class="nav__menu" aria-label="{{ item.label }}">
+            {%- for g in site.data[item.menu] %}
+            {%- assign group = products | where: "category", g.id %}
+            <li><a class="nav__menu-link" href="{{ item.url | relative_url }}#{{ g.anchor }}"><strong>{{ g.title }}</strong><span>{{ group | map: "name" | join: " · " }}</span></a></li>
+            {%- endfor %}
+          </ul>
+        </li>
+        {%- else %}
         <li><a class="nav__link{% if active %} is-active{% endif %}" href="{{ item.url | relative_url }}">{{ item.label }}</a></li>
+        {%- endif %}
         {%- endfor %}
       </ul>
       <a class="btn btn--primary btn--sm nav__cta" href="{{ '/#contact' | relative_url }}">Let's talk {% include icon.html name="arrow-right" %}</a>

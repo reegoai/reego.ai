@@ -10,7 +10,7 @@ description: >-
 {%- for cat in site.data.product_categories %}
 {%- assign group = products | where: "category", cat.id -%}
 {%- if group.size > 0 %}
-<section class="section{% if forloop.first %} section--flush-top{% endif %}" id="{{ cat.id }}s">
+<section class="section{% if forloop.first %} section--flush-top{% endif %}" id="{{ cat.anchor }}">
   <div class="container">
     {% include section-head.html title=cat.title intro=cat.intro %}
     <div class="projects projects--all">

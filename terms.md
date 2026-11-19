@@ -15,7 +15,7 @@ These terms govern your use of Shiftera, the shift-planning service (web app, An
 
 ## 1\. The service
 
-Shiftera lets you enter teams, people, roles, time off and rules, build shift schedules, share them with your team and export them as PDF or calendar entries. Schedules are suggested by an algorithm; whoever publishes the plan is responsible for checking it before release and for following working-time laws.
+Shiftera lets you enter teams, people, roles, time off and rules, build shift schedules, share them with your team and export them as PDF or calendar entries. Schedules are suggested by a rules engine that applies the rules the planner sets; it doesn't use artificial intelligence and doesn't evaluate or profile people. Whoever publishes the plan is responsible for checking it before release and for following working-time laws.
 
 ## 2\. Accounts
 

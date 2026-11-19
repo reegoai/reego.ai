@@ -1,7 +1,9 @@
 # Groups on /products/ and in the footer, in this order. Products pick one with `category:` in projects.yml.
 - id: app
   title: Apps
+  anchor: apps
   intro: Apps for teams and for everyday life, on the web, Android and iOS.
 - id: dev-tool
   title: Developer tools
+  anchor: dev-tools
   intro: Tools and guides for building with LLMs and tool calling.
