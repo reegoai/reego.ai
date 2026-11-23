@@ -4,7 +4,7 @@ title: "Privacy Policy"
 eyebrow: Legal
 heading: "Privacy Policy"
 description: "What data Reego Software and Shiftera collect, why, which service providers process it, how long we keep it and your rights under the GDPR and KVKK."
-updated: "Effective date: November 6, 2026"
+updated: "Effective date: November 23, 2026"
 permalink: /privacy/
 ---
 <!-- Shiftera's policy text comes from shiftera.io (shiftera-io/content/pages/en/privacy.yaml); keep the two in step. -->
@@ -13,7 +13,7 @@ Reego Software ("we", "us") makes and sells **Shiftera**, shift and rota schedul
 
 ## This website (reego.ai)
 
-reego.ai uses no analytics and no advertising tools, and sets no cookies of its own. Your colour theme choice is kept in your browser's local storage only. The contact section embeds a Google Maps map of our office, which Google loads from its own servers and may set its own cookies for. The site is hosted on GitHub Pages, which logs IP addresses for security, and loads its fonts from Google Fonts, so your browser sends your IP address to Google when the page loads. The contact form opens your own email app; if you email us or write on WhatsApp, we use what you send only to answer you and to prepare and carry out an agreement with you.
+reego.ai uses Google Ads, loaded through Google Tag Manager, to measure how our ads perform (for example, whether a visit came from an ad click) and to show relevant ads, only if you accept it in the cookie notice shown on your first visit. If you accept, Google receives the pages you open, the ad click that brought you, your browser and device information and your IP address, and Google Ads sets its cookies (such as _gcl_au, and Google's own advertising cookies on its domains). If you decline, Google Tag Manager is not loaded, nothing is sent to Google Ads and no advertising cookies are set. The site uses no analytics. Your choice is kept in your browser's local storage for 12 months, and you can change it at any time with the Cookie settings link at the bottom of every page; withdrawing consent deletes the Google Ads cookies set on reego.ai. Google Ads and Google Tag Manager are provided by Google Ireland Limited; Google may transfer data to the US under the EU-US Data Privacy Framework. The legal basis is your consent, which you can withdraw at any time. Your colour theme choice is kept in your browser's local storage only. The contact section embeds a Google Maps map of our office, which Google loads from its own servers and may set its own cookies for. The site is hosted on GitHub Pages, which logs IP addresses for security, and loads its fonts from Google Fonts, so your browser sends your IP address to Google when the page loads. The contact form opens your own email app; if you email us or write on WhatsApp, we use what you send only to answer you and to prepare and carry out an agreement with you.
 
 ## Shiftera
 

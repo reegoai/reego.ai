@@ -56,6 +56,9 @@
           <li><a href="{{ '/terms/' | relative_url }}">Terms of Service</a></li>
           <li><a href="{{ '/refunds/' | relative_url }}">Refund Policy</a></li>
           <li><a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a></li>
+          {%- if jekyll.environment == "production" and site.google_tag_manager %}
+          <li><button type="button" class="site-footer__linkbtn" data-cookie-settings>Cookie settings</button></li>
+          {%- endif %}
         </ul>
       </div>
     </div>

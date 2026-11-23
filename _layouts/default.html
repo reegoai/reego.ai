@@ -10,5 +10,6 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  {% if jekyll.environment == "production" and site.google_tag_manager %}{% include cookie-notice.html %}{% endif %}
 </body>
 </html>

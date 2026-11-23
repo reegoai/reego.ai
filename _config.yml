@@ -12,6 +12,9 @@ baseurl: ""
 lang: en_US
 timezone: Europe/Istanbul
 
+# Google Tag Manager container; loaded only in production builds (JEKYLL_ENV=production).
+google_tag_manager: GTM-WK7QKSBX
+
 logo: /assets/img/logo-mark.svg
 twitter:
   username: ReegoSoftware
