@@ -1,10 +1,10 @@
 <script>
-  /* Cookie consent + Google Tag Manager.
-     Nothing from Google Tag Manager loads until the visitor accepts (Consent Mode v2,
-     everything denied by default). The choice is kept in localStorage for 12 months;
+  /* Cookie consent + Google Tag Manager + Google Analytics 4.
+     Nothing from Google Tag Manager or Google Analytics loads until the visitor accepts
+     (Consent Mode v2, everything denied by default). The choice is kept in localStorage for 12 months;
      "Cookie settings" in the footer reopens the notice so it can be changed at any time. */
   (function (w, d) {
-    var KEY = "reego-consent", MAX_AGE = 365 * 24 * 60 * 60 * 1000, GTM = "{{ site.google_tag_manager }}";
+    var KEY = "reego-consent", MAX_AGE = 365 * 24 * 60 * 60 * 1000, GTM = "{{ site.google_tag_manager }}", GA = "{{ site.google_analytics }}";
     w.dataLayer = w.dataLayer || [];
     function gtag() { w.dataLayer.push(arguments); }
     gtag("consent", "default", {
@@ -15,18 +15,31 @@
     gtag("set", "ads_data_redaction", true);
 
     var loaded = false;
-    function loadGtm() {
-      if (loaded) return;
-      loaded = true;
-      w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    function addScript(src) {
       var s = d.createElement("script");
       s.async = true;
-      s.src = "https://www.googletagmanager.com/gtm.js?id=" + GTM;
+      s.src = src;
       d.head.appendChild(s);
     }
+    function loadTags() {
+      if (loaded) return;
+      loaded = true;
+      if (GTM) {
+        w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        addScript("https://www.googletagmanager.com/gtm.js?id=" + GTM);
+      }
+      if (GA) {
+        gtag("js", new Date());
+        gtag("config", GA);
+        addScript("https://www.googletagmanager.com/gtag/js?id=" + GA);
+      }
+    }
     function grant() {
-      gtag("consent", "update", { ad_storage: "granted", ad_user_data: "granted", ad_personalization: "granted" });
-      loadGtm();
+      gtag("consent", "update", {
+        ad_storage: "granted", ad_user_data: "granted", ad_personalization: "granted",
+        analytics_storage: "granted"
+      });
+      loadTags();
     }
     function read() {
       try {
@@ -38,7 +51,7 @@
     function save(choice) {
       try { localStorage.setItem(KEY, JSON.stringify({ choice: choice, at: Date.now() })); } catch (e) {}
     }
-    function clearAdCookies() {
+    function clearGoogleCookies() {
       var host = location.hostname, domains = ["", host, "." + host, "." + host.replace(/^www\./, "")];
       d.cookie.split(";").forEach(function (c) {
         var name = c.split("=")[0].trim();
@@ -63,8 +76,11 @@
       notice.querySelector("[data-consent-decline]").addEventListener("click", function () {
         var reload = loaded;
         save("denied");
-        gtag("consent", "update", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" });
-        clearAdCookies();
+        gtag("consent", "update", {
+          ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied",
+          analytics_storage: "denied"
+        });
+        clearGoogleCookies();
         hide();
         if (reload) location.reload(); /* unload tags that already ran */
       });

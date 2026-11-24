@@ -12,8 +12,11 @@ baseurl: ""
 lang: en_US
 timezone: Europe/Istanbul
 
-# Google Tag Manager container; loaded only in production builds (JEKYLL_ENV=production).
+# Google Tag Manager container and Google Analytics 4 measurement ID; both load only in
+# production builds (JEKYLL_ENV=production) and only after the visitor accepts cookies.
+# Don't also add a GA4 tag for this ID inside the GTM container, or visits count twice.
 google_tag_manager: GTM-WK7QKSBX
+google_analytics: G-4J4TLWBKL1
 
 logo: /assets/img/logo-mark.svg
 twitter:
