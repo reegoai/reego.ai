@@ -1,10 +1,12 @@
 <script>
-  /* Cookie consent + Google Tag Manager + Google Analytics 4.
-     Nothing from Google Tag Manager or Google Analytics loads until the visitor accepts
-     (Consent Mode v2, everything denied by default). The choice is kept in localStorage for 12 months;
+  /* Cookie consent + Google Tag Manager.
+     Google Analytics 4 (G-4J4TLWBKL1) comes through the GTM container, which is linked to it,
+     so it is not loaded separately here (that would count every visit twice).
+     Nothing from Google Tag Manager loads until the visitor accepts (Consent Mode v2,
+     everything denied by default). The choice is kept in localStorage for 12 months;
      "Cookie settings" in the footer reopens the notice so it can be changed at any time. */
   (function (w, d) {
-    var KEY = "reego-consent", MAX_AGE = 365 * 24 * 60 * 60 * 1000, GTM = "{{ site.google_tag_manager }}", GA = "{{ site.google_analytics }}";
+    var KEY = "reego-consent", MAX_AGE = 365 * 24 * 60 * 60 * 1000, GTM = "{{ site.google_tag_manager }}";
     w.dataLayer = w.dataLayer || [];
     function gtag() { w.dataLayer.push(arguments); }
     gtag("consent", "default", {
@@ -15,31 +17,21 @@
     gtag("set", "ads_data_redaction", true);
 
     var loaded = false;
-    function addScript(src) {
-      var s = d.createElement("script");
-      s.async = true;
-      s.src = src;
-      d.head.appendChild(s);
-    }
-    function loadTags() {
+    function loadGtm() {
       if (loaded) return;
       loaded = true;
-      if (GTM) {
-        w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        addScript("https://www.googletagmanager.com/gtm.js?id=" + GTM);
-      }
-      if (GA) {
-        gtag("js", new Date());
-        gtag("config", GA);
-        addScript("https://www.googletagmanager.com/gtag/js?id=" + GA);
-      }
+      w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var s = d.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtm.js?id=" + GTM;
+      d.head.appendChild(s);
     }
     function grant() {
       gtag("consent", "update", {
         ad_storage: "granted", ad_user_data: "granted", ad_personalization: "granted",
         analytics_storage: "granted"
       });
-      loadTags();
+      loadGtm();
     }
     function read() {
       try {

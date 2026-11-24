@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{% if jekyll.environment == "production" %}{% if site.google_tag_manager or site.google_analytics %}{% include consent.html %}{% endif %}{% endif %}
+{% if jekyll.environment == "production" and site.google_tag_manager %}{% include consent.html %}{% endif %}
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#07080d">
 <script>
