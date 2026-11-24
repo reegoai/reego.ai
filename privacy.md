@@ -9,7 +9,7 @@ permalink: /privacy/
 ---
 <!-- Shiftera's policy text comes from shiftera.io (shiftera-io/content/pages/en/privacy.yaml); keep the two in step. -->
 
-Reego Software ("we", "us") makes and sells **Shiftera**, shift and rota scheduling software ([www.shiftera.io](https://www.shiftera.io), the web app at [app.shiftera.io](https://app.shiftera.io), and the Android and iOS apps). See [Products](/products/). This policy covers this website and Shiftera. Shiftera's part is the same as the [Privacy Policy on shiftera.io](https://www.shiftera.io/privacy/). Questions: [support@shiftera.io](mailto:support@shiftera.io) or [contact@reego.ai](mailto:contact@reego.ai).
+Reego Software ("we", "us"), a company registered in Estonia, makes and sells **Shiftera**, shift and rota scheduling software ([www.shiftera.io](https://www.shiftera.io), the web app at [app.shiftera.io](https://app.shiftera.io), and the Android and iOS apps). See [Products](/products/). This policy covers this website and Shiftera. Shiftera's part is the same as the [Privacy Policy on shiftera.io](https://www.shiftera.io/privacy/). Questions: [support@shiftera.io](mailto:support@shiftera.io) or [contact@reego.ai](mailto:contact@reego.ai).
 
 ## This website (reego.ai)
 
@@ -76,7 +76,7 @@ We keep your data while your account exists. You can delete your account at any 
 
 ## Your rights
 
-Under the GDPR and Turkey's KVKK you can access, correct, delete and export your data, and object to its processing. Write to [support@shiftera.io](mailto:support@shiftera.io); we answer within 30 days.
+Reego Software is registered in Estonia, so the EU General Data Protection Regulation (GDPR) applies to us. For people in Türkiye we also follow Law No. 6698 on the Protection of Personal Data (KVKK). Under both you can access, correct, delete and export your data, and object to its processing. Write to [support@shiftera.io](mailto:support@shiftera.io); we answer within 30 days. You can also complain to the Estonian Data Protection Inspectorate (Andmekaitse Inspektsioon), Türkiye's Personal Data Protection Authority (KVKK) or the data protection authority where you live.
 
 ## Children
 

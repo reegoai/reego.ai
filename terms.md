@@ -4,12 +4,12 @@ title: "Terms of Service"
 eyebrow: Legal
 heading: "Terms of Service"
 description: "Terms of Service for Shiftera, sold by Reego Software: the service, accounts, Standard and Premium, payment through Paddle, renewal, liability and governing law."
-updated: "Effective date: October 29, 2026"
+updated: "Effective date: November 24, 2026"
 permalink: /terms/
 ---
 <!-- Shiftera's policy text comes from shiftera.io (shiftera-io/content/pages/en/terms.yaml); keep the two in step. -->
 
-Reego Software ("we", "us") makes and sells **Shiftera**, shift and rota scheduling software ([www.shiftera.io](https://www.shiftera.io), the web app at [app.shiftera.io](https://app.shiftera.io), and the Android and iOS apps). See [Products](/products/). These terms apply to Shiftera and are the same as the [Terms of Service on shiftera.io](https://www.shiftera.io/terms/). Engineering and consulting work by Reego Software is not sold on this website; it is governed by a separate signed agreement with each client.
+Reego Software ("we", "us"), a company registered in Estonia, makes and sells **Shiftera**, shift and rota scheduling software ([www.shiftera.io](https://www.shiftera.io), the web app at [app.shiftera.io](https://app.shiftera.io), and the Android and iOS apps). See [Products](/products/). These terms apply to Shiftera and are the same as the [Terms of Service on shiftera.io](https://www.shiftera.io/terms/). Engineering and consulting work by Reego Software is not sold on this website; it is governed by a separate signed agreement with each client.
 
 These terms govern your use of Shiftera, the shift-planning service (web app, Android and iOS apps) provided by Reego Software ("we", "us"). By using the service you agree to these terms.
 
@@ -55,7 +55,7 @@ We may update these terms. We announce important changes in the app or by email 
 
 ## 11\. Governing law
 
-These terms are governed by the laws of the Republic of Türkiye. If you are a consumer, you keep the protection of the mandatory consumer laws of the country you live in. Istanbul courts have jurisdiction over disputes, except where consumer law gives jurisdiction to consumer arbitration boards or courts elsewhere.
+These terms are governed by the laws of Estonia, where Reego Software is registered, and, for users in Türkiye, also by the laws of the Republic of Türkiye. If you are a consumer, you keep the protection of the mandatory consumer laws of the country you live in. Disputes go to the competent courts of Estonia or, for users in Türkiye, the Istanbul courts, except where consumer law gives jurisdiction to consumer arbitration boards or courts elsewhere.
 
 ## 12\. Contact
 
