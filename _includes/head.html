@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% if jekyll.environment == "production" and site.google_tag_manager %}{% include consent.html %}{% endif %}
+{% if jekyll.environment == "production" and site.cloudflare_web_analytics != "" and site.cloudflare_web_analytics %}<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflare_web_analytics }}"}'></script>{% endif %}
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#07080d">
 <script>

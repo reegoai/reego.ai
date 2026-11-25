@@ -17,6 +17,12 @@ timezone: Europe/Istanbul
 # (G-4J4TLWBKL1, linked to the container), so don't load GA4 on the page as well.
 google_tag_manager: GTM-WK7QKSBX
 
+# Cloudflare Web Analytics beacon token (dash.cloudflare.com → Analytics & Logs → Web Analytics
+# → Add a site → reego.ai → copy the token from the JS snippet). Cookieless and stores no IP
+# addresses, so it needs no consent and counts every visit, including visitors who decline
+# Google. Loaded only in production builds; leave empty to turn it off.
+cloudflare_web_analytics: "9aadd07dace745cf93406a482ec77b5b"
+
 logo: /assets/img/logo-mark.svg
 twitter:
   username: ReegoSoftware
